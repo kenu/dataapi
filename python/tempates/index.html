@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bid Data</title>
+</head>
+<body>
+    <h1>Bid Public Information</h1>
+    {% for item in data %}
+        <div>
+            <p>{{ item.title }}</p> <!-- 예시 필드명, 실제 필드명으로 변경 필요 -->
+            <p>{{ item.content }}</p> <!-- 예시 필드명, 실제 필드명으로 변경 필요 -->
+        </div>
+    {% endfor %}
+</body>
+</html>
